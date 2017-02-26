@@ -1,0 +1,10 @@
+<html>
+<script>
+var h = document.getElementsByTagName("HTML")[0].innerHTML.charCodeAt(102).toString(16);
+{{!-- Three {s are used to NOT escape html --}}
+if (h == '73') {
+	document.body.innerHTML = "{{{one}}}";
+} else {
+	document.body.innerHTML = "{{{two}}}";
+}
+</script>
