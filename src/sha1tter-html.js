@@ -24,11 +24,11 @@ let onedata = "two";
 
 if (program.oneData !== ""){
 	onedata = fs.readFileSync(program.oneData);
-	onedata = onedata.toString().replace(/\n/g, "\\n").replace(/\"/g, "\\\"");
+	onedata = onedata.toString("base64");
 }
 if (program.twoData !== ""){
 	twodata = fs.readFileSync(program.twoData);
-	twodata = twodata.toString().replace(/\n/g, "\\n").replace(/\"/g, "\\\"");
+	twodata = twodata.toString("base64");
 }
 
 // Template Stuff

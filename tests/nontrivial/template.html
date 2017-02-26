@@ -2,9 +2,11 @@
 <script>
 var h = document.getElementsByTagName("HTML")[0].innerHTML.charCodeAt(102).toString(16);
 {{!-- Three {s are used to NOT escape html --}}
+document.open();
 if (h == '73') {
-	document.body.innerHTML = window.atob("{{{one}}}");
+	document.write(window.atob("{{{one}}}"));
 } else {
-	document.body.innerHTML = window.atob("{{{two}}}");
+	document.write(window.atob("{{{two}}}"));
 }
+document.close();
 </script>

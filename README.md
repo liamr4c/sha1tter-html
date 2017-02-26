@@ -15,3 +15,6 @@ When opened, good.html will display "Good" and evil will display "Evil".
 
 ## How it works
 Embedded javascript will check the header and set the body to the input html based on a perticular character that is different in the header.
+
+## With complex files (with javascript, etc.)
+There are currently many problems with more complex inputs. With the defualt template, javascript in the input is not run. There is, however, a template in `tests/nontrivial` that somewhat works (warpwallet works, keeweb doesn't). With that, there is a problem where the pdf junk that the collision uses is visible.
